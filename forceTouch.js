@@ -17,17 +17,13 @@ export default class Example extends Component {
   _onLeftHandlerStateChange = event => {
     switch (event.nativeEvent.state) {
       case State.END:
-        console.log("Left End");
         break;
       case State.BEGAN:
         console.log(`${event.nativeEvent.x} ${event.nativeEvent.y} ${event.nativeEvent.force} ${event.nativeEvent.radius}`);
-        console.log("Left Began");
         break;
       case State.CANCELLED:
-        console.log("Left Cancel");
         break;
       case State.ACTIVE:
-        console.log("Left Active");
         break;
     }
   };
@@ -35,17 +31,13 @@ export default class Example extends Component {
   _onRightHandlerStateChange = event => {
     switch (event.nativeEvent.state) {
       case State.END:
-        console.log("Right End");
         break;
       case State.BEGAN:
         console.log(`${event.nativeEvent.x} ${event.nativeEvent.y} ${event.nativeEvent.force} ${event.nativeEvent.radius}`);
-        console.log("Right Began");
         break;
       case State.CANCELLED:
-        console.log("Right Cancel");
         break;
       case State.ACTIVE:
-        console.log("Right Active");
         break;
     }
   };
